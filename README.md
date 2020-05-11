@@ -73,9 +73,10 @@ total number of members in the geometric progression = 4, sum = 1111;
 etc.
 
 Having in mind this, we could structue the formula for the sum of all members in this geometric progression as follows:
+
 1+(value of last member)*10. 
 
-In this way we could apply modulo (Math.pow(10,9)+7) at every iteration and thus avoid the processing 
+In this way, we could apply modulo (Math.pow(10,9)+7) at every iteration and thus avoid the processing 
 of the large numbers that could result from Math.pow(muliplier, total members).
 
 Example, sum of all members in this geometric progression:
