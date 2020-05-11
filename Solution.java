@@ -31,9 +31,10 @@ public class Solution {
     for (int i = n - 2; i >= 0; i--) {
       
       sumGeomProg_firstMemberOne_multiplierTen = (1 + sumGeomProg_firstMemberOne_multiplierTen * 10) % modulo;
-      ch = int_inStringForm.charAt(i);
 
-      // Other alternative, applying the ASCII: digit =  Character.toString(ch) - '0';
+      ch = int_inStringForm.charAt(i);
+      
+      // Other alternative, applying the ASCII: digit =  ch - '0';
       int digit = Integer.parseInt(Character.toString(ch));
 
       long sumGeomProg = (digit * sumGeomProg_firstMemberOne_multiplierTen) % modulo;
