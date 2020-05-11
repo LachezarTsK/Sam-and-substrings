@@ -20,7 +20,7 @@ multiplied by
 multiplied by
 
 (sum of all members of a geometric progression, where: 
-first memeber=1, multiplicant=10, total members = 'number of digits, from current digit (inclusive) to the end digit (inclusive) in the string')
+first memeber=1, multiplier=10, total members = 'number of digits, from the current digit (inclusive) to the end digit (inclusive) in the string')
 
 Example: 
 
