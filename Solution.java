@@ -1,5 +1,3 @@
-package main.samAndSubstrings.secondStreamline;
-
 import java.util.Scanner;
 
 public class Solution {
@@ -16,7 +14,12 @@ public class Solution {
     System.out.println(result);
   }
 
-  /** Calculates the sum of all possible substrings, modulo Math.pow(10, 9) + 7. */
+  /** 
+  * Calculates the sum of all possible substrings, 
+  * modulo Math.pow(10, 9) + 7.
+  *
+  *@return An integer, representing this sum.
+  */
   private static int sum_of_allSubtrsings_modulo(String int_inStringForm) {
 
     int n = int_inStringForm.length();
@@ -27,9 +30,8 @@ public class Solution {
     long sumGeomProg_firstMemberOne_multiplierTen = 1;
 
     for (int i = n - 2; i >= 0; i--) {
-      sumGeomProg_firstMemberOne_multiplierTen =
-          (1 + sumGeomProg_firstMemberOne_multiplierTen * 10) % modulo;
-
+      
+      sumGeomProg_firstMemberOne_multiplierTen = (1 + sumGeomProg_firstMemberOne_multiplierTen * 10) % modulo;
       ch = int_inStringForm.charAt(i);
 
       // Other alternative, applying the ASCII: digit =  Character.toString(ch) - '0';
