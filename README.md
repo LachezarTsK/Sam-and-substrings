@@ -72,7 +72,7 @@ total number of members in the geometric progression = 4, sum = 1111;
 
 etc.
 
-Having in mind this, we could structue the formula for the sum of all members in this geometric progression as follows:
+Having in mind this, we could structue the formula for the sum of all members in this geometric progression, as follows:
 
 1+(value of last member)*10. 
 
