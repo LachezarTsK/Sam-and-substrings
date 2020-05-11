@@ -15,8 +15,7 @@ public class Solution {
   }
 
   /** 
-  * Calculates the sum of all possible substrings, 
-  * modulo Math.pow(10, 9) + 7.
+  * Calculates the sum of all possible substrings, modulo Math.pow(10, 9) + 7.
   *
   *@return An integer, representing this sum.
   */
