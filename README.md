@@ -56,12 +56,12 @@ that is part of this version of the formula.
 
 The sum of all members of a geomeric progression, could also be expressed as follows:
 
-(first member)+(value of previous sum member)*multiplier. 
+(first member) + (value of sum for the previous members) * multiplier. 
 
 In this way, we could apply modulo (Math.pow(10,9)+7) at every iteration and thus avoid the processing 
 of the large numbers from the first version of the formula.
 
-Example, sum of all members in this geometric progression with
+Example: sum of all members in this geometric progression with
 first memeber=1, multiplier=10, where each iteration represents the sum 
 of all the members up to the current iteration (inclusive):
 
