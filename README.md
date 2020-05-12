@@ -51,14 +51,14 @@ Thus, for digit '8' in xxxx8zzzzzz, the total is: 4 * 8 * 1 * (Math.pow(10, (6+1
 
 Since the result has to be presented as modulo (Math.pow(10,9)+7), we should structure 
 the code in such a way that at every interation through the input, by applying the modulo, 
-we avoid the processing of large numbers that could result from Math.pow(muliplier, total members) 
+we avoid processing of the large numbers that could result from Math.pow(muliplier, total members) 
 that is part of this version of the formula.
 
-The sum of all members of a geomeric progression, could also be expressed as follows:
+The sum of all members of a geomeric progression could also be expressed as follows:
 
 (first member) + (value of sum for the previous members) * multiplier. 
 
-In this way, we could apply modulo (Math.pow(10,9)+7) at every iteration and thus avoid the processing 
+In this way, we could apply modulo (Math.pow(10,9)+7) at every iteration and avoid the processing 
 of the large numbers that could result from the first version of the formula.
 
 Example: sum of all members of a geometric progression with
