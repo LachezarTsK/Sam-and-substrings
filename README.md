@@ -49,37 +49,21 @@ first memeber * (Math.pow(multiplier, total members) - 1) / (multiplier-1);
 
 Thus:  1 * (Math.pow(10, (6+1))-1) / (10-1);
 
-This will optimize the code but it still will not be enough for some test cases with very large input
-because Math.pow(muliplier, total members) could result in very large numbers. If the formula
-for the sum of geometric progression is structured in this way, we still first have to obtain the value of
-Math.pow(multiplier, total members) and only then reduce this value by modulo (Math.pow(10,9)+7).
-
 Since the result has to be presented as modulo (Math.pow(10,9)+7), we should structure 
 the code in such a way that at every interation through the input, by applying the modulo, 
-we avoid the processing such large numbers. 
+we avoid the processing of large numbers that could result from Math.pow(muliplier, total members) 
+that is part of this version of the formula.
 
-The sum of all members of a geomeric progression, with first memeber=1 and multiplier=10
-will always result in a number, which is composed only of the digit '1', where the total number of '1s'
-is equal to the total number of members in the geometric progression. Thus: 
+The sum of all members of a geomeric progression, could also be expressed as follows:
 
-total number of members in the geometric progression = 1, sum = 1;
-
-total number of members in the geometric progression = 2, sum = 11;
-
-total number of members in the geometric progression = 3, sum = 111;
-
-total number of members in the geometric progression = 4, sum = 1111;
-
-etc.
-
-Having in mind this, we could structue the formula for the sum of all members in this geometric progression, as follows:
-
-1+(value of last member)*10. 
+(first member)+(value of previous sum member)*multiplier. 
 
 In this way, we could apply modulo (Math.pow(10,9)+7) at every iteration and thus avoid the processing 
-of the large numbers that could result from Math.pow(muliplier, total members).
+of the large numbers from the first version of the formula.
 
-Example, sum of all members in this geometric progression:
+Example, sum of all members in this geometric progression with
+first memeber=1, multiplier=10, where each iteration represents the sum 
+of all the members up to the current iteration(inclusive):
 
 first iteration:          1 % modulo
 
@@ -94,9 +78,3 @@ etc.
 So, to summarize it for the example with xxxx8zzzzzz:
 
 4 * 8 * (seventh iteration)
-
-
-
-
-
-
