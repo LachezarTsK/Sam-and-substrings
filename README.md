@@ -61,7 +61,7 @@ The sum of all members of a geomeric progression could also be expressed as foll
 In this way, we could apply modulo (Math.pow(10,9)+7) at every iteration and avoid the processing 
 of the large numbers that could result from the first version of the formula.
 
-Example: sum of all members of a geometric progression with
+Example for sum of all members of a geometric progression with
 first member=1, multiplier=10, where each iteration represents the sum 
 of all the members up to the current iteration (inclusive):
 
