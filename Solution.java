@@ -23,12 +23,12 @@ public class Solution {
 
     int n = int_inStringForm.length();
     char ch = int_inStringForm.charAt(n - 1);
-    int totalSum_modulo = n * 1 * Integer.parseInt(Character.toString(ch));
+    int totalSum_modulo = 0;
 
     // Stores the sum of all members of a geormetric progression: first member=1, multiplier=10.
-    long sumGeomProg_firstMemberOne_multiplierTen = 1;
+    long sumGeomProg_firstMemberOne_multiplierTen = 0;
 
-    for (int i = n - 2; i >= 0; i--) {
+    for (int i = n - 1; i >= 0; i--) {
       
       sumGeomProg_firstMemberOne_multiplierTen = (1 + sumGeomProg_firstMemberOne_multiplierTen * 10) % modulo;
 
