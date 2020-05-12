@@ -21,12 +21,12 @@ public class Solution {
   */
   private static int sum_of_allSubtrsings_modulo(String int_inStringForm) {
 
-    int n = int_inStringForm.length();
-    char ch = int_inStringForm.charAt(n - 1);
-    int totalSum_modulo = 0;
-
     // Stores the sum of all members of a geormetric progression: first member=1, multiplier=10.
     long sumGeomProg_firstMemberOne_multiplierTen = 0;
+    int totalSum_modulo = 0;
+
+    int n = int_inStringForm.length();
+    char ch = int_inStringForm.charAt(n - 1);
 
     for (int i = n - 1; i >= 0; i--) {
       
