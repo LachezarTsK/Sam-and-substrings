@@ -5,7 +5,7 @@ HackerRank>Practice>Algorithms>Dynamic Programming>Sam and substrings
 
 https://www.hackerrank.com/challenges/sam-and-substrings/problem
 
-The code has to be very optimizied, otherwise the test cases with large input will time out.
+The algorithm for this challenge has to be very optimizied, otherwise the test cases with large input will time out.
 Thus, taking the most obvious solution by composing all possible substrings and summing up their value will result in time out.
 
 However, there is a nice mathematical shortcut that solves the problem within the strict time frames, stipulated by this challenge.
