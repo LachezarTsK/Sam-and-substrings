@@ -47,7 +47,7 @@ the formula for the sum of all members of a geometric porgression:
 
 first memeber * (Math.pow(multiplier, total members) - 1) / (multiplier-1);
 
-Thus:  1 * (Math.pow(10, (6+1))-1) / (10-1);
+Thus, for digit '8' in xxxx8zzzzzz, the total is: 4 * 8 * 1 * (Math.pow(10, (6+1))-1) / (10-1);
 
 Since the result has to be presented as modulo (Math.pow(10,9)+7), we should structure 
 the code in such a way that at every interation through the input, by applying the modulo, 
@@ -63,7 +63,7 @@ of the large numbers from the first version of the formula.
 
 Example, sum of all members in this geometric progression with
 first memeber=1, multiplier=10, where each iteration represents the sum 
-of all the members up to the current iteration(inclusive):
+of all the members up to the current iteration (inclusive):
 
 first iteration:          1 % modulo
 
